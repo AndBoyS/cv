@@ -1,0 +1,171 @@
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+
+\documentclass[]{awesome-cv}
+\usepackage{tikz}
+\usepackage{ulem}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+\usepackage{textcomp}
+\usepackage{hyperref}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerlastnamestyle{Бахматов} \headerfirstnamestyle{Андрей Вячеславович} \\
+	\vspace{2mm}
+\end{center}
+
+
+\vspace{2mm}
+\cvsection{Персональная информация}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.5}{\begin{tabular}{ l  l }
+		День рождения:  & {\qquad\skill{17.12.1998}} \\
+		Телефон:  & {\qquad\skill{7 (999) 854-98-34}} \\
+		Почта:      &{\qquad\skill{\href{mailto:andboyxd@gmail.com}{andboyxd@gmail.com}}    \ExternalLink} \\
+		Telegram:      &{\qquad\skill{\href{https://t.me/memento_or}{@memento\_or}}    \ExternalLink} \\
+		GitHub:      &{\qquad\skill{\href{https://github.com/AndBoyS/}{@AndBoyS}}    \ExternalLink} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-9mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Образование}
+\begin{cventries}
+	\cventry
+	{Бакалавриат, ПМиИТ, Прикладная математика и информатика}
+	{Финансовый университет при Правительстве Российской Федерации}
+	{Москва}
+	{2017 – 2021}
+	{Анализ данных и принятие решений в экономике и финансах}
+	\cventry
+	{Магистратура, ФКН, Прикладная математика и информатика}
+	{Национальный исследовательский университет "Высшая школа экономики"}
+	{Москва}
+	{2021 - 2023}
+	{Финансовые технологии и анализ данных}
+\end{cventries}
+
+\vspace{-1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Навыки}
+\vspace{-3mm}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Python:  & {\qquad\skill{Уверенное владение языком и стандартным стеком data science}} \\
+        Machine Learning:  & {\qquad\skill{Использование большого количества типов классических и глубоких моделей}} \\
+		& {\qquad\skill{Опыт решения разнообразных задач:}} \\
+		& {\qquad\skill{предсказание дефолтов на графах, определение повреждений автомобиля в computer-vision}} \\
+		& {\qquad\skill{Использование передовых моделей deep learning:}} \\
+		& {\qquad\skill{рекуррентные графовые нейронные сети, transformer-based универсальные модели сегментации}} \\
+        MLOps:  & {\qquad\skill{Уверенное использование git (interactive rebase, squash, worktrees и т.д.)}} \\
+		& {\qquad\skill{Опыт работы с CLI, работа на Linux через ssh}} \\
+		Английский: & {\qquad\skill{B2 / Upper-Intermediate}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{5mm}
+\cvsection{Проекты}
+\begin{cventries}
+	\cventry
+	{Предобратка датасетов, подготовка и реализация графовых НН на PyG-Temporal и DGL, оптимизация архитектуры и гиперпараметров графовых НН}
+	{Эмбеддинги компаний в рамках контракта с Газпромбанком}
+	{}
+	{2021}
+	{}
+    \cventry
+    {Использование, обучение и модификация transformer-based модели сегментации повреждений, создание синтетических датасетов для обучения модели сегментации деталей}
+    {Определение повреждений авто по фото из страхового случая в рамках контракта с Ресо}
+    {}
+    {2022-2023}
+    {}
+\end{cventries}
+\vspace{5mm}
+\cvsection{Работа}
+\begin{cventries}
+    \cventry
+    {Лаборатория искусственного интеллекта и сетевого анализа, Финансовый университет}
+    {Data Scientist}
+    {}
+    {2021 - 2023}
+    {}
+\end{cventries}
+
+\end{document}
